@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-10T21:36:22 IST" name="Default suite" finished-at="2025-07-10T21:36:57 IST" duration-ms="34741">
+    <groups>
+    </groups>
+    <test started-at="2025-07-10T21:36:22 IST" name="Default test" finished-at="2025-07-10T21:36:57 IST" duration-ms="34741">
+      <class name="TC_03_PIMTest_DataProvider">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TC_03_PIMTest_DataProvider@55b0dcab]" started-at="2025-07-10T21:36:16 IST" name="launchApp" finished-at="2025-07-10T21:36:22 IST" duration-ms="6516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="verifyEmployeeSearchByName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TC_03_PIMTest_DataProvider@55b0dcab]" started-at="2025-07-10T21:36:22 IST" name="verifyEmployeeSearchByName" data-provider="addEmployee" finished-at="2025-07-10T21:36:44 IST" duration-ms="21648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qedge123!@#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[srinivas]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Balasani]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeSearchByName -->
+        <test-method signature="verifyEmployeeSearchByName(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TC_03_PIMTest_DataProvider@55b0dcab]" started-at="2025-07-10T21:36:44 IST" name="verifyEmployeeSearchByName" data-provider="addEmployee" finished-at="2025-07-10T21:36:57 IST" duration-ms="13051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qedge123!@#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shiva]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Balasani]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeSearchByName -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TC_03_PIMTest_DataProvider@55b0dcab]" started-at="2025-07-10T21:36:57 IST" name="closeApp" finished-at="2025-07-10T21:36:58 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- TC_03_PIMTest_DataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

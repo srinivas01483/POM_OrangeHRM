@@ -1,0 +1,61 @@
+<suite name="OrangeHRM_Suite">
+
+<test name="Login Module">
+<parameter name="adminuid" value="Admin"></parameter>
+<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+
+<classes>
+<class name="TestScenarios.TC_01_AdminLoginTestwithValidData"></class>
+
+</classes>
+</test>
+
+<test name="AdminLoginTestwithInvalidData">
+<parameter name="adminuid" value="incorrectusername"></parameter>
+<parameter name="adminpwd" value="Qqwqe"></parameter>
+<classes>
+<class name="TestScenarios.TC_02_AdminLoginTestwithInvalidData"></class>
+
+</classes>
+</test>
+
+<test name="PIM Test">
+<parameter name="adminuid" value="Admin"></parameter>
+<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+<parameter name="fname" value="Test_sri1"></parameter>
+<parameter name="lname" value="B"></parameter>
+
+<classes>
+<class name="TestScenarios.TC_03_PIMTest"></class>
+
+</classes>
+</test>
+
+
+<test name="Admin Creation test">
+<parameter name="adminuid" value="Admin"></parameter>
+<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+<parameter name="role" value="Admin"></parameter>
+<parameter name="fname" value="Test_sri1 B"></parameter>
+<parameter name="uname" value="Test_sri1"></parameter>
+<parameter name="pword" value="QedgewQ1234!@#$"></parameter>
+<classes>
+<class name="TestScenarios.TC_04_UserRegTest"></class>
+
+</classes>
+</test>
+
+
+<test name="EmployeeLoginTestwithvalidData">
+<parameter name="empname" value="Test_sri1"></parameter>
+<parameter name="emppwd" value="QedgewQ1234!@#$"></parameter>
+<classes>
+<class name="TestScenarios.TC_05_EmployeeLoginTest"></class>
+
+</classes>
+</test>
+
+-->
+
+
+</suite>

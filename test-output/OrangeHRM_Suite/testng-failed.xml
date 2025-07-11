@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM_Suite]">
+  <test thread-count="5" name="PIM Test(failed)">
+    <parameter name="fname" value="Srini26"/>
+    <parameter name="adminpwd" value="Qedge123!@#"/>
+    <parameter name="lname" value="s"/>
+    <parameter name="adminuid" value="Admin"/>
+    <classes>
+      <class name="TestScenarios.TC_03_PIMTest">
+        <methods>
+          <include name="logoutApp"/>
+          <include name="launchApp"/>
+          <include name="AdminLogin"/>
+          <include name="verifyEmployeeSearchByName"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- TestScenarios.TC_03_PIMTest -->
+    </classes>
+  </test> <!-- PIM Test(failed) -->
+</suite> <!-- Failed suite [OrangeHRM_Suite] -->
