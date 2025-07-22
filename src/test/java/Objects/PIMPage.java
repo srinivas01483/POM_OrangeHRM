@@ -1,6 +1,8 @@
 package Objects;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -10,6 +12,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.collect.Table;
 
 public class PIMPage {
 
@@ -28,6 +32,7 @@ public class PIMPage {
 	//Object Repository
 	
 	@FindBy(linkText = "PIM")
+	static
 	WebElement PIM_Menu;
 	
 	@FindBy(linkText = "Add Employee")
@@ -60,7 +65,7 @@ public class PIMPage {
 	
 	//Actions
 	
-	public void navigatetoPIM()
+	public static void navigatetoPIM()
 	{
 		
 		PIM_Menu.click();
@@ -119,6 +124,35 @@ public class PIMPage {
 		return res;
 			}
 				
+	
+	public boolean employeeSortedNameList()
+	{
+		employeeList_btn.click();
+
+	//By tablelocator=By.id("resultTable");
+	//wait.until(ExpectedConditions.visibilityOfElementLocated(tablelocator));
+	List<WebElement> empelements=driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr[1]/td[3]"));
+	
+	List<String>empNames=new ArrayList<>();
+	
+	for(WebElement ele:empelements)
+	{
+		
+		System.out.println(empNames.add(ele.getText()));
+	}
+		List<String>sortedNames=new ArrayList<String>(empNames);
+		Collections.sort(sortedNames);
+		if(empNames.equals(sortedNames))
+		{
+			
+			System.out.println("Employee Names Are sorted "+empNames+ " "+sortedNames);
+		}else
+		{
+			
+			System.out.println("Employee Names are not Sorted");
+		}
+		return true;
+	}
 	}
 	
 

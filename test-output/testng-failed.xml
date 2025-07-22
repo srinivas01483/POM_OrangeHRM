@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TC_03_PIMTest_DataProvider">
+      <class name="TestScenarios.TC_06_EmployeeListSortingTest">
         <methods>
-          <include name="verifyEmployeeSearchByName" invocation-numbers="0 1"/>
+          <include name="verifyEmployeeListsisSorted"/>
           <include name="launchApp"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- TC_03_PIMTest_DataProvider -->
+      </class> <!-- TestScenarios.TC_06_EmployeeListSortingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -27,7 +27,7 @@ public class TC_01_AdminLoginTestwithValidData_DataProvider extends AppUtils {
 	
 	//mention  test name in the dataprovider
 	
-	@Test(dataProvider ="AdminLoginTest" )
+	@Test(dataProvider  ="AdminLoginTest" )
 	public void SearchOperation(String uid,String pwd)
 	{
 
